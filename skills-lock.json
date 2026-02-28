@@ -31,6 +31,11 @@
       "sourceType": "github",
       "computedHash": "5e39c5caef5fe610871b2fe497a62d52d25264066b00f5de82160214a15d732d"
     },
+    "history-insight": {
+      "source": "team-attention/plugins-for-claude-natives",
+      "sourceType": "github",
+      "computedHash": "befc2c325028a73379f14ae05d91cdaafeccbdd79847fd384c566966487f5e25"
+    },
     "session-wrap": {
       "source": "team-attention/plugins-for-claude-natives",
       "sourceType": "github",

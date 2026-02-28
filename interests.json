@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-02-28",
+  "primary": [
+    "AI/ML",
+    "바이브 코딩",
+    "Agent Harness",
+    "개발/기술"
+  ],
+  "secondary": [
+    "스타트업/비즈니스",
+    "기술 트렌드"
+  ],
+  "excludeKeywords": [
+    "채용 공고",
+    "광고성 글"
+  ],
+  "platforms": {
+    "linkedin": {
+      "enabled": true,
+      "collectCount": 20
+    },
+    "twitter": {
+      "enabled": false,
+      "collectCount": 50
+    }
+  }
+}

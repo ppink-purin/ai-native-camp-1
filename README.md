@@ -66,8 +66,37 @@ AI Native Camp의 실습 프로젝트입니다. Claude Code를 활용하여 Link
 
 - `sync/2026-02-27-linkedin-recommendations.md` - LinkedIn TOP 10 추천
 
+## ⚡ Quick Win - 워크플로우 개선 도구
+
+세션 히스토리 분석을 바탕으로 즉시 사용 가능한 개선 도구를 제공합니다.
+
+### 세션 시작 체크 (10초)
+```bash
+./scripts/session-start.sh
+```
+- MCP 서버 상태, 관심사, 미완료 작업, Git 상태 자동 확인
+
+### 세션 종료 루틴 (2분)
+```bash
+./scripts/session-end.sh
+```
+- 변경사항 확인, 관심사 업데이트, 에러 기록
+
+### 주간 리뷰 (30분, 매주 일요일)
+```bash
+cat scripts/weekly-review.md
+```
+- 전체 세션 분석, 학습 정리, 다음 주 목표 설정
+
+**📘 상세 가이드:** `QUICK_WIN_GUIDE.md` 참고
+
+**효과:** 세션당 65분 절약 (65% ↓)
+
+---
+
 ## 참고 자료
 
+- `QUICK_WIN_GUIDE.md` - **워크플로우 개선 가이드 (필독!)**
 - `CLAUDE.md` - 프로젝트 컨텍스트 및 워크플로우
 - `.claude/skills/my-context-sync/SKILL.md` - LinkedIn 스킬 상세
 - `.claude/skills/my-session-wrap/SKILL.md` - Session Wrap 스킬 상세
