@@ -1,7 +1,7 @@
 # AI Native Camp - 까망퓨린
 
 **시작일:** 2026-02-27
-**현재 진행:** Day 4 실습 (2026-02-28)
+**현재 진행:** Day 5 완료 (2026-02-28)
 
 ## 프로젝트 소개
 
@@ -31,6 +31,39 @@ AI Native Camp의 실습 프로젝트입니다. Claude Code를 활용하여 Link
 "/wrap" 또는 "세션 정리" 입력
 ```
 
+### 3. 트윗 번역 및 분석 (my-fetch-tweet)
+- FxEmbed API로 X/Twitter 트윗 자동 수집
+- 3단계 번역 파이프라인 (요약 → 인사이트 → 전체 번역)
+- 작성자 정보 및 인게이지먼트 수치 포함
+- 전문 용어 원문 병기
+
+**실행:**
+```
+"이 트윗 번역해줘 [URL]"
+```
+
+### 4. YouTube 영상 번역 (my-fetch-youtube)
+- yt-dlp 또는 YouTube Transcript API로 자막 추출
+- Web Search 보정으로 고유명사/전문 용어 오류 수정
+- 메타데이터 기반 컨텍스트 파악
+- 챕터별 구분 번역 (챕터 있는 경우)
+
+**실행:**
+```
+"이 영상 번역해줘 [YouTube URL]"
+```
+
+### 5. Quiz-First 학습 (my-content-digest)
+- Pre-Quiz로 호기심 자극 (3문제)
+- 선택적 콘텐츠 제공 (틀린 부분/인사이트/전체)
+- 3단계 본 퀴즈 (기본/중급/심화 각 3문제)
+- 기억력 9-12% 향상 효과
+
+**실행:**
+```
+"[콘텐츠] 내용으로 퀴즈 내줘"
+```
+
 ## MCP 서버 설정
 
 - **Puppeteer**: 웹 스크래핑
@@ -46,7 +79,10 @@ AI Native Camp의 실습 프로젝트입니다. Claude Code를 활용하여 Link
 ├── .agents/skills/          # 제공된 학습 스킬 (Day 1-6)
 ├── .claude/skills/
 │   ├── my-context-sync/     # LinkedIn 분석 스킬
-│   └── my-session-wrap/     # 세션 정리 스킬
+│   ├── my-session-wrap/     # 세션 정리 스킬
+│   ├── my-fetch-tweet/      # X/Twitter 트윗 번역 스킬
+│   ├── my-fetch-youtube/    # YouTube 영상 번역 스킬
+│   └── my-content-digest/   # Quiz-First 학습 스킬
 ├── sync/                    # AI 분석 결과 저장
 ├── scripts/                 # 자동화 스크립트
 ├── .mcp.json               # MCP 서버 설정
@@ -58,8 +94,8 @@ AI Native Camp의 실습 프로젝트입니다. Claude Code를 활용하여 Link
 
 - [x] Day 1: Onboarding - Claude Code 기초
 - [x] Day 2: Context Sync 스킬 개발
-- [ ] Day 4: Session Wrap & Analyze
-- [ ] Day 5: Fetch & Digest
+- [x] Day 4: Session Wrap & Analyze
+- [x] Day 5: Fetch & Digest
 - [ ] Day 6: PRD Submit
 
 ## 생성된 리포트
@@ -100,3 +136,6 @@ cat scripts/weekly-review.md
 - `CLAUDE.md` - 프로젝트 컨텍스트 및 워크플로우
 - `.claude/skills/my-context-sync/SKILL.md` - LinkedIn 스킬 상세
 - `.claude/skills/my-session-wrap/SKILL.md` - Session Wrap 스킬 상세
+- `.claude/skills/my-fetch-tweet/SKILL.md` - 트윗 번역 스킬 상세
+- `.claude/skills/my-fetch-youtube/SKILL.md` - YouTube 번역 스킬 상세
+- `.claude/skills/my-content-digest/SKILL.md` - Quiz-First 학습 스킬 상세
