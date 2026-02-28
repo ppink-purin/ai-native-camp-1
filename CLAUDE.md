@@ -4,7 +4,7 @@
 - **목적**: AI Native Camp 학습 프로젝트 (Day 1-6 커리큘럼)
 - **사용자**: 까망퓨린
 - **시작일**: 2026-02-27
-- **현재 진행**: Day 5 완료 (2026-02-28)
+- **현재 진행**: Day 6 완료 (2026-02-28)
 - **학습 내용**: Claude Code, 커스텀 스킬, MCP, Multi-agent 패턴
 
 ## 현재 진도
@@ -13,7 +13,7 @@
 - ✅ Day 2: Context Sync 스킬 만들기 (my-context-sync)
 - ✅ Day 4: Session Wrap & Analyze (my-session-wrap)
 - ✅ Day 5: Fetch & Digest (콘텐츠 수집 및 학습)
-- ⏳ Day 6: PRD Submit (최종 프로젝트 제출)
+- ✅ Day 6: PRD Submit (최종 프로젝트 제출)
 
 ## 커스텀 스킬
 
@@ -113,7 +113,42 @@ my-fetch-tweet → my-content-digest
 my-fetch-youtube → my-content-digest
 ```
 
-## MCP 서버 설정
+## Claude Code 설정
+
+### Agent Teams 활성화
+**파일**: `~/.claude/settings.json`
+```json
+{
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  }
+}
+```
+
+### 플러그인
+**설치된 플러그인**:
+- **superpowers**: 개발 워크플로우 강화 (brainstorming, TDD, debugging, code review 등)
+- **clarify**: 모호한 요청을 AskUserQuestion으로 명확화 (Day 3에서 심화)
+
+**마켓플레이스**:
+- obra/superpowers-marketplace
+- team-attention/plugins-for-claude-natives
+
+### Hook 설정
+**파일**: `.claude/settings.local.json`
+
+**Stop Hook**: 응답 완료 시 현재 시간 출력
+```json
+{
+  "hooks": {
+    "stop": {
+      "command": "echo \"[완료] $(date '+%H:%M:%S')\""
+    }
+  }
+}
+```
+
+### MCP 서버 설정
 
 **설정 파일**: `.mcp.json`, `.claude/settings.local.json`
 
@@ -128,6 +163,13 @@ my-fetch-youtube → my-content-digest
     "fetch": {
       "command": "npx",
       "args": ["-y", "mcp-fetch-server"]
+    },
+    "claude_ai_Gmail": {
+      "command": "npx",
+      "args": ["-y", "@claude-ai/mcp-server-gmail"],
+      "env": {
+        "GMAIL_CREDENTIALS_PATH": "/Users/paddington/Project/practice/01_AI_Native_Camp/.claude/skills/my-context-sync/scripts/credentials.json"
+      }
     }
   }
 }
@@ -225,6 +267,35 @@ my-fetch-youtube → my-content-digest
 
 ## 학습 노트
 
+### 2026-03-01 (Day 1)
+**배운 점**:
+- **7가지 핵심 기능**: CLAUDE.md, Skill, MCP, Subagent, Agent Teams, Hook, Plugin
+- **Working Backward 방식**: 결과물을 먼저 체험하고 원리를 나중에 이해
+- **STOP PROTOCOL**: 2-Phase 학습 (Phase A: 설명+실행 → STOP, Phase B: 퀴즈+피드백)
+- **Progressive Disclosure**: 필요한 순간에 필요한 지식만 로딩
+
+**설정 완료**:
+- Agent Teams 활성화 (`settings.json`)
+- Stop Hook 추가 (`settings.local.json`) - 응답 완료 시 시간 출력
+- MCP 서버 설정 (Puppeteer, Fetch, Gmail)
+- 플러그인 설치: superpowers, clarify
+
+**핵심 인사이트**:
+- 외우지 말고 체험하기 - 모르면 Claude에게 물어보면 된다
+- 컨텍스트 윈도우는 유한하다 - CLAUDE.md는 항상 로딩, Skill은 점진적 로딩
+- AI의 한계를 코드로 보완 - Hook은 결정론적 실행 (100% 확실)
+- 모호함을 명확함으로 - AskUserQuestion 활용
+
+**실전 체험**:
+- `/weekly-sync` 스킬 실행 (Slack → git → 문서 자동화)
+- AskUserQuestion으로 모호한 요청 명확화
+- brainstorming 스킬 맛보기 (영웅문 "딸깍" 기능)
+
+**생성된 문서**:
+- `TIL_Day1_Onboarding.md`: 7가지 기능 상세 학습 내용
+- `self-intro-presentation.md`: 사내 소개용 프레젠테이션 개요
+- `self-introduction.md`: 기본 자기소개
+
 ### 2026-02-28 (Day 4)
 **배운 점**:
 - Multi-agent 패턴의 강력함
@@ -247,11 +318,45 @@ my-fetch-youtube → my-content-digest
 - 플랫폼별 제약 사항 (YouTube 보안 정책)
 - 3단계 번역 파이프라인의 효과 (요약 → 인사이트 → 전체)
 
+### 2026-02-28 (Day 6)
+**배운 점**:
+- **PRD 작성**: 프로젝트 요구사항 문서화 (문제 정의, 스킬 목록, 변화 기록)
+- **Git 워크플로우**: 브랜치 생성, 커밋, PR 제출 프로세스
+- **gh CLI**: GitHub 작업 자동화 (pr create, repo view)
+- **검증 체크리스트**: 8가지 필수 항목 확인
+
+**성과**:
+- 5개 스킬 통합 PRD 작성 및 제출
+- GitHub PR 생성: https://github.com/ppink-purin/ai-native-camp-1/pull/1
+- AI Native Camp 전체 과정 완주
+
+## 완료 프로젝트
+
+**AI 기반 개인 학습 & 생산성 시스템** (Day 1-6 전체 완료)
+
+### PRD 제출
+- 📝 파일: `ppink-purin/PRD.md`
+- 🔗 GitHub PR: https://github.com/ppink-purin/ai-native-camp-1/pull/1
+- ✅ 검증 통과: 8/8 항목
+
+### 통합 워크플로우
+```
+정보 수집 → 학습 & 소화 → 작업 관리
+
+1. 정보 수집:
+   - my-context-sync: LinkedIn 피드 자동 분석
+   - my-fetch-tweet: 트윗 번역 (FxEmbed API)
+   - my-fetch-youtube: YouTube 자막 번역 (Web Search 보정)
+
+2. 학습 & 소화:
+   - my-content-digest: Quiz-First 방식 (기억력 9-12% ↑)
+
+3. 작업 관리:
+   - my-session-wrap: 세션 자동 정리 (4개 병렬 에이전트)
+```
+
 ## 다음 단계
-- ✅ Day 5: Fetch & Digest 완료
-  - ✅ my-fetch-tweet (트윗 번역)
-  - ✅ my-fetch-youtube (YouTube 자막 번역)
-  - ✅ my-content-digest (Quiz-First 학습)
-- Day 6: PRD Submit (최종 프로젝트 제출)
-  - gh CLI 설치 및 인증 필요
-  - PRD 작성 및 GitHub PR 제출
+
+- 📚 **실전 적용**: 키움증권 AI 서비스 개발에 스킬 활용
+- 🚀 **확장**: 금융 특화 스킬 개발 (데이터 분석, 모델 모니터링)
+- 🤝 **공유**: 팀 내 자동화 워크플로우 전파

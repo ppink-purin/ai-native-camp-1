@@ -14,5 +14,6 @@
   "enabledMcpjsonServers": [
     "puppeteer",
     "fetch"
-  ]
+  ],
+  "outputStyle": "Explanatory"
 }
