@@ -1,0 +1,581 @@
+{
+  "metadata": {
+    "source": "LinkedIn Feed (Sample Data)",
+    "url": "https://www.linkedin.com/feed/",
+    "collection_date": "2026-02-27",
+    "total_posts": 30,
+    "note": "This is prototype sample data. Actual collection requires Puppeteer MCP and LinkedIn authentication."
+  },
+  "posts": [
+    {
+      "id": 1,
+      "author": {
+        "name": "Sarah Chen",
+        "title": "VP of Product at TechCorp",
+        "profile_url": "https://www.linkedin.com/in/sample-profile-1"
+      },
+      "content": {
+        "text": "Excited to announce our new AI-powered analytics platform! After 18 months of development, we're finally ready to transform how businesses understand their data. Key features include real-time insights, predictive modeling, and seamless integration with existing tools.",
+        "preview": "Excited to announce our new AI-powered analytics platform! After 18 months..."
+      },
+      "engagement": {
+        "reactions": 847,
+        "comments": 92,
+        "shares": 34
+      },
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:sample1",
+      "timestamp": "2026-02-27T08:30:00Z"
+    },
+    {
+      "id": 2,
+      "author": {
+        "name": "Michael Torres",
+        "title": "Senior Software Engineer at DataFlow Inc",
+        "profile_url": "https://www.linkedin.com/in/sample-profile-2"
+      },
+      "content": {
+        "text": "Just completed my first marathon! The parallels between long-distance running and software development are striking: both require patience, persistence, and breaking down big goals into manageable milestones. #PersonalGrowth #TechLife",
+        "preview": "Just completed my first marathon! The parallels between long-distance running..."
+      },
+      "engagement": {
+        "reactions": 1243,
+        "comments": 156,
+        "shares": 12
+      },
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:sample2",
+      "timestamp": "2026-02-27T07:15:00Z"
+    },
+    {
+      "id": 3,
+      "author": {
+        "name": "Dr. Emily Rodriguez",
+        "title": "Chief Data Scientist at Innovation Labs",
+        "profile_url": "https://www.linkedin.com/in/sample-profile-3"
+      },
+      "content": {
+        "text": "Fascinating research paper on transformer architectures just dropped. The implications for natural language processing are profound. Link in comments for those interested in diving deeper into the technical details.",
+        "preview": "Fascinating research paper on transformer architectures just dropped..."
+      },
+      "engagement": {
+        "reactions": 562,
+        "comments": 78,
+        "shares": 89
+      },
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:sample3",
+      "timestamp": "2026-02-27T06:45:00Z"
+    },
+    {
+      "id": 4,
+      "author": {
+        "name": "James Park",
+        "title": "Founder & CEO at StartupX",
+        "profile_url": "https://www.linkedin.com/in/sample-profile-4"
+      },
+      "content": {
+        "text": "We're hiring! Looking for passionate engineers to join our mission of democratizing financial services. Remote-first culture, competitive comp, and the chance to work on problems that impact millions. DM me if interested!",
+        "preview": "We're hiring! Looking for passionate engineers to join our mission..."
+      },
+      "engagement": {
+        "reactions": 423,
+        "comments": 187,
+        "shares": 45
+      },
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:sample4",
+      "timestamp": "2026-02-27T05:20:00Z"
+    },
+    {
+      "id": 5,
+      "author": {
+        "name": "Anna Kowalski",
+        "title": "Product Manager at CloudTech Solutions",
+        "profile_url": "https://www.linkedin.com/in/sample-profile-5"
+      },
+      "content": {
+        "text": "5 lessons I learned leading cross-functional teams:\n1. Communication > Technical skills\n2. Embrace ambiguity\n3. Celebrate small wins\n4. Psychological safety is non-negotiable\n5. Always be learning\n\nWhat would you add to this list?",
+        "preview": "5 lessons I learned leading cross-functional teams: 1. Communication > Technical skills..."
+      },
+      "engagement": {
+        "reactions": 2145,
+        "comments": 342,
+        "shares": 156
+      },
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:sample5",
+      "timestamp": "2026-02-27T04:00:00Z"
+    },
+    {
+      "id": 6,
+      "author": {
+        "name": "David Kim",
+        "title": "Machine Learning Engineer at AI Systems",
+        "profile_url": "https://www.linkedin.com/in/sample-profile-6"
+      },
+      "content": {
+        "text": "Spent the weekend building a proof-of-concept for real-time object detection using YOLOv9. The speed improvements are incredible - 60 FPS on standard hardware! Open-sourcing the code soon. Stay tuned!",
+        "preview": "Spent the weekend building a proof-of-concept for real-time object detection..."
+      },
+      "engagement": {
+        "reactions": 891,
+        "comments": 134,
+        "shares": 67
+      },
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:sample6",
+      "timestamp": "2026-02-26T22:30:00Z"
+    },
+    {
+      "id": 7,
+      "author": {
+        "name": "Lisa Martinez",
+        "title": "Director of Engineering at FinTech Global",
+        "profile_url": "https://www.linkedin.com/in/sample-profile-7"
+      },
+      "content": {
+        "text": "Proud to share that our team achieved 99.99% uptime this quarter while processing 10 billion transactions. This wouldn't be possible without our incredible SRE team and our investment in automated monitoring and self-healing systems.",
+        "preview": "Proud to share that our team achieved 99.99% uptime this quarter..."
+      },
+      "engagement": {
+        "reactions": 1567,
+        "comments": 203,
+        "shares": 78
+      },
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:sample7",
+      "timestamp": "2026-02-26T20:15:00Z"
+    },
+    {
+      "id": 8,
+      "author": {
+        "name": "Robert Zhang",
+        "title": "Tech Lead at E-Commerce Giants",
+        "profile_url": "https://www.linkedin.com/in/sample-profile-8"
+      },
+      "content": {
+        "text": "Hot take: Code reviews are more about knowledge sharing than catching bugs. The best reviews I've received have taught me new patterns, edge cases, and ways of thinking. Always approach reviews as a learning opportunity.",
+        "preview": "Hot take: Code reviews are more about knowledge sharing than catching bugs..."
+      },
+      "engagement": {
+        "reactions": 3421,
+        "comments": 567,
+        "shares": 234
+      },
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:sample8",
+      "timestamp": "2026-02-26T18:45:00Z"
+    },
+    {
+      "id": 9,
+      "author": {
+        "name": "Jennifer Lee",
+        "title": "UX Research Lead at Design Studio",
+        "profile_url": "https://www.linkedin.com/in/sample-profile-9"
+      },
+      "content": {
+        "text": "Just published our annual UX trends report! Key findings: voice interfaces are becoming mainstream, accessibility is no longer optional, and users expect hyper-personalized experiences. Full report available on our website.",
+        "preview": "Just published our annual UX trends report! Key findings: voice interfaces..."
+      },
+      "engagement": {
+        "reactions": 678,
+        "comments": 89,
+        "shares": 145
+      },
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:sample9",
+      "timestamp": "2026-02-26T16:20:00Z"
+    },
+    {
+      "id": 10,
+      "author": {
+        "name": "Thomas Anderson",
+        "title": "Cloud Architect at Enterprise Solutions",
+        "profile_url": "https://www.linkedin.com/in/sample-profile-10"
+      },
+      "content": {
+        "text": "Successfully migrated 200+ microservices to Kubernetes this month. Lessons learned: start with stateless services, invest in observability early, and automate everything. Happy to share our playbook with anyone going through a similar journey.",
+        "preview": "Successfully migrated 200+ microservices to Kubernetes this month..."
+      },
+      "engagement": {
+        "reactions": 1234,
+        "comments": 198,
+        "shares": 112
+      },
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:sample10",
+      "timestamp": "2026-02-26T14:30:00Z"
+    },
+    {
+      "id": 11,
+      "author": {
+        "name": "Rachel Goldman",
+        "title": "VP of Engineering at SaaS Innovators",
+        "profile_url": "https://www.linkedin.com/in/sample-profile-11"
+      },
+      "content": {
+        "text": "Women in Tech Summit was incredible this year! Met so many brilliant engineers, founders, and leaders. The future of tech is diverse, and I'm optimistic about the progress we're making. Let's keep pushing forward together!",
+        "preview": "Women in Tech Summit was incredible this year! Met so many brilliant..."
+      },
+      "engagement": {
+        "reactions": 2876,
+        "comments": 421,
+        "shares": 198
+      },
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:sample11",
+      "timestamp": "2026-02-26T12:00:00Z"
+    },
+    {
+      "id": 12,
+      "author": {
+        "name": "Carlos Silva",
+        "title": "Security Engineer at CyberDefense Corp",
+        "profile_url": "https://www.linkedin.com/in/sample-profile-12"
+      },
+      "content": {
+        "text": "PSA: Just discovered a critical vulnerability in a popular open-source library. Patch is available now. If you're using XYZ framework v2.x, please update immediately. Security is everyone's responsibility. #CyberSecurity",
+        "preview": "PSA: Just discovered a critical vulnerability in a popular open-source library..."
+      },
+      "engagement": {
+        "reactions": 4521,
+        "comments": 678,
+        "shares": 892
+      },
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:sample12",
+      "timestamp": "2026-02-26T10:15:00Z"
+    },
+    {
+      "id": 13,
+      "author": {
+        "name": "Nina Patel",
+        "title": "Data Engineer at Analytics Plus",
+        "profile_url": "https://www.linkedin.com/in/sample-profile-13"
+      },
+      "content": {
+        "text": "Built my first real-time data pipeline using Apache Kafka and Spark Streaming. The learning curve was steep, but seeing data flow from source to dashboard in milliseconds is incredibly satisfying. Resources and code snippets in the comments!",
+        "preview": "Built my first real-time data pipeline using Apache Kafka and Spark Streaming..."
+      },
+      "engagement": {
+        "reactions": 1092,
+        "comments": 167,
+        "shares": 223
+      },
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:sample13",
+      "timestamp": "2026-02-26T08:45:00Z"
+    },
+    {
+      "id": 14,
+      "author": {
+        "name": "Kevin O'Brien",
+        "title": "DevOps Engineer at Infrastructure Inc",
+        "profile_url": "https://www.linkedin.com/in/sample-profile-14"
+      },
+      "content": {
+        "text": "Terraform vs. Pulumi: I've now used both extensively in production. My take: Terraform for stability and ecosystem, Pulumi for complex logic and type safety. Neither is universally better - it depends on your team's needs and expertise.",
+        "preview": "Terraform vs. Pulumi: I've now used both extensively in production..."
+      },
+      "engagement": {
+        "reactions": 1876,
+        "comments": 312,
+        "shares": 145
+      },
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:sample14",
+      "timestamp": "2026-02-26T06:30:00Z"
+    },
+    {
+      "id": 15,
+      "author": {
+        "name": "Sophia Williams",
+        "title": "Mobile Developer at App Creators",
+        "profile_url": "https://www.linkedin.com/in/sample-profile-15"
+      },
+      "content": {
+        "text": "React Native or Flutter? After building production apps in both, here's my honest comparison. TL;DR: Both are excellent, but Flutter's performance edge is noticeable in complex UIs. Full analysis in my latest blog post (link in bio).",
+        "preview": "React Native or Flutter? After building production apps in both..."
+      },
+      "engagement": {
+        "reactions": 2341,
+        "comments": 489,
+        "shares": 267
+      },
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:sample15",
+      "timestamp": "2026-02-26T04:00:00Z"
+    },
+    {
+      "id": 16,
+      "author": {
+        "name": "Marcus Johnson",
+        "title": "AI Researcher at Deep Learning Institute",
+        "profile_url": "https://www.linkedin.com/in/sample-profile-16"
+      },
+      "content": {
+        "text": "Our paper on efficient fine-tuning methods for large language models was just accepted to ICML 2026! We achieved 95% of full fine-tuning performance with only 0.1% of the parameters. Preprint available on arXiv.",
+        "preview": "Our paper on efficient fine-tuning methods for large language models..."
+      },
+      "engagement": {
+        "reactions": 1654,
+        "comments": 234,
+        "shares": 456
+      },
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:sample16",
+      "timestamp": "2026-02-25T22:15:00Z"
+    },
+    {
+      "id": 17,
+      "author": {
+        "name": "Isabella Rossi",
+        "title": "Frontend Developer at Web Solutions",
+        "profile_url": "https://www.linkedin.com/in/sample-profile-17"
+      },
+      "content": {
+        "text": "CSS Grid vs. Flexbox in 2026: Stop choosing one! They complement each other beautifully. Grid for page layout, Flexbox for component layout. Master both and your life will be so much easier. Thread with examples below.",
+        "preview": "CSS Grid vs. Flexbox in 2026: Stop choosing one! They complement each other..."
+      },
+      "engagement": {
+        "reactions": 3124,
+        "comments": 567,
+        "shares": 891
+      },
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:sample17",
+      "timestamp": "2026-02-25T20:00:00Z"
+    },
+    {
+      "id": 18,
+      "author": {
+        "name": "Ahmed Hassan",
+        "title": "Backend Engineer at API Services",
+        "profile_url": "https://www.linkedin.com/in/sample-profile-18"
+      },
+      "content": {
+        "text": "Just optimized our API response times from 2000ms to 150ms by implementing proper database indexing and query optimization. Sometimes the simplest solutions have the biggest impact. Performance matters!",
+        "preview": "Just optimized our API response times from 2000ms to 150ms..."
+      },
+      "engagement": {
+        "reactions": 2456,
+        "comments": 389,
+        "shares": 178
+      },
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:sample18",
+      "timestamp": "2026-02-25T18:30:00Z"
+    },
+    {
+      "id": 19,
+      "author": {
+        "name": "Christine Wong",
+        "title": "Engineering Manager at Tech Ventures",
+        "profile_url": "https://www.linkedin.com/in/sample-profile-19"
+      },
+      "content": {
+        "text": "Transitioning from IC to management? Here's what I wish I knew: Your value is now measured by your team's success, not your code. Let go of the keyboard (gradually), invest in 1:1s, and remember that people are complex. It's challenging but rewarding.",
+        "preview": "Transitioning from IC to management? Here's what I wish I knew..."
+      },
+      "engagement": {
+        "reactions": 4567,
+        "comments": 723,
+        "shares": 534
+      },
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:sample19",
+      "timestamp": "2026-02-25T16:00:00Z"
+    },
+    {
+      "id": 20,
+      "author": {
+        "name": "Daniel Brown",
+        "title": "Full Stack Developer at StartupHub",
+        "profile_url": "https://www.linkedin.com/in/sample-profile-20"
+      },
+      "content": {
+        "text": "Shipped my first feature using GitHub Copilot extensively. My honest review: It's like having a junior developer pair programming with you. Great for boilerplate, sometimes suggests clever solutions, but you still need to understand what it's doing.",
+        "preview": "Shipped my first feature using GitHub Copilot extensively. My honest review..."
+      },
+      "engagement": {
+        "reactions": 1890,
+        "comments": 456,
+        "shares": 123
+      },
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:sample20",
+      "timestamp": "2026-02-25T14:15:00Z"
+    },
+    {
+      "id": 21,
+      "author": {
+        "name": "Priya Sharma",
+        "title": "Blockchain Developer at CryptoTech",
+        "profile_url": "https://www.linkedin.com/in/sample-profile-21"
+      },
+      "content": {
+        "text": "Smart contract security audit completed! Found and fixed 3 critical vulnerabilities before mainnet deployment. Remember: in blockchain, bugs can cost millions. Always audit, always test, always be paranoid. #Web3 #Security",
+        "preview": "Smart contract security audit completed! Found and fixed 3 critical vulnerabilities..."
+      },
+      "engagement": {
+        "reactions": 1234,
+        "comments": 178,
+        "shares": 234
+      },
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:sample21",
+      "timestamp": "2026-02-25T12:00:00Z"
+    },
+    {
+      "id": 22,
+      "author": {
+        "name": "Oliver Schmidt",
+        "title": "Site Reliability Engineer at Scale Systems",
+        "profile_url": "https://www.linkedin.com/in/sample-profile-22"
+      },
+      "content": {
+        "text": "Our incident response time went from 45 minutes to 8 minutes after implementing proper runbooks and automation. The key: Make the right thing to do the easy thing to do. Document everything, automate the rest.",
+        "preview": "Our incident response time went from 45 minutes to 8 minutes..."
+      },
+      "engagement": {
+        "reactions": 2678,
+        "comments": 345,
+        "shares": 289
+      },
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:sample22",
+      "timestamp": "2026-02-25T10:30:00Z"
+    },
+    {
+      "id": 23,
+      "author": {
+        "name": "Maya Thompson",
+        "title": "iOS Developer at Mobile First",
+        "profile_url": "https://www.linkedin.com/in/sample-profile-23"
+      },
+      "content": {
+        "text": "SwiftUI has matured so much since its release. Just rebuilt our entire app UI and the code is 40% smaller, more maintainable, and the animations are buttery smooth. If you haven't tried it recently, give it another shot!",
+        "preview": "SwiftUI has matured so much since its release. Just rebuilt our entire app UI..."
+      },
+      "engagement": {
+        "reactions": 1567,
+        "comments": 234,
+        "shares": 167
+      },
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:sample23",
+      "timestamp": "2026-02-25T08:00:00Z"
+    },
+    {
+      "id": 24,
+      "author": {
+        "name": "Lucas Garcia",
+        "title": "QA Engineer at Quality Systems",
+        "profile_url": "https://www.linkedin.com/in/sample-profile-24"
+      },
+      "content": {
+        "text": "Automated testing is great, but don't forget exploratory testing! Just found a critical UX bug that would never show up in automated tests. Balance is key - use both approaches strategically.",
+        "preview": "Automated testing is great, but don't forget exploratory testing..."
+      },
+      "engagement": {
+        "reactions": 1890,
+        "comments": 267,
+        "shares": 134
+      },
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:sample24",
+      "timestamp": "2026-02-25T06:15:00Z"
+    },
+    {
+      "id": 25,
+      "author": {
+        "name": "Yuki Tanaka",
+        "title": "Game Developer at Gaming Studios",
+        "profile_url": "https://www.linkedin.com/in/sample-profile-25"
+      },
+      "content": {
+        "text": "Our indie game just hit 1 million downloads! Built with Unity and lots of coffee. Biggest lesson: Polish matters more than features. A few mechanics done extremely well beats many mediocre ones. Thank you to everyone who supported us!",
+        "preview": "Our indie game just hit 1 million downloads! Built with Unity and lots of coffee..."
+      },
+      "engagement": {
+        "reactions": 5678,
+        "comments": 892,
+        "shares": 445
+      },
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:sample25",
+      "timestamp": "2026-02-25T04:00:00Z"
+    },
+    {
+      "id": 26,
+      "author": {
+        "name": "Victoria Chen",
+        "title": "Database Administrator at Data Corp",
+        "profile_url": "https://www.linkedin.com/in/sample-profile-26"
+      },
+      "content": {
+        "text": "PostgreSQL 16 performance improvements are no joke. Query times cut in half for our analytical workloads. If you're still on older versions, the upgrade path is smoother than you think. Performance benchmarks in the comments.",
+        "preview": "PostgreSQL 16 performance improvements are no joke. Query times cut in half..."
+      },
+      "engagement": {
+        "reactions": 1345,
+        "comments": 189,
+        "shares": 234
+      },
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:sample26",
+      "timestamp": "2026-02-24T22:30:00Z"
+    },
+    {
+      "id": 27,
+      "author": {
+        "name": "Ethan Davis",
+        "title": "Solutions Architect at Cloud Platforms",
+        "profile_url": "https://www.linkedin.com/in/sample-profile-27"
+      },
+      "content": {
+        "text": "Multi-cloud strategy: Worth the complexity? After 2 years managing AWS + GCP infrastructure, my take is yes, but only if you have specific reasons (vendor lock-in avoidance, regulatory requirements, or best-of-breed services). Otherwise, stick to one.",
+        "preview": "Multi-cloud strategy: Worth the complexity? After 2 years managing..."
+      },
+      "engagement": {
+        "reactions": 2234,
+        "comments": 456,
+        "shares": 178
+      },
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:sample27",
+      "timestamp": "2026-02-24T20:00:00Z"
+    },
+    {
+      "id": 28,
+      "author": {
+        "name": "Natalie Foster",
+        "title": "Tech Recruiter at Talent Solutions",
+        "profile_url": "https://www.linkedin.com/in/sample-profile-28"
+      },
+      "content": {
+        "text": "Hiring tip for candidates: Your GitHub profile matters! Clean code, good documentation, and active contributions speak louder than any resume. Even small personal projects show passion and ability to ship. Make it easy for us to say yes!",
+        "preview": "Hiring tip for candidates: Your GitHub profile matters! Clean code, good documentation..."
+      },
+      "engagement": {
+        "reactions": 3890,
+        "comments": 678,
+        "shares": 567
+      },
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:sample28",
+      "timestamp": "2026-02-24T18:15:00Z"
+    },
+    {
+      "id": 29,
+      "author": {
+        "name": "Ryan Murphy",
+        "title": "Technical Writer at Documentation Pro",
+        "profile_url": "https://www.linkedin.com/in/sample-profile-29"
+      },
+      "content": {
+        "text": "Good documentation is a competitive advantage. Users choose tools they can understand. Invested 3 months revamping our docs - result: 60% reduction in support tickets and much happier developers. Write for humans, not robots.",
+        "preview": "Good documentation is a competitive advantage. Users choose tools they can understand..."
+      },
+      "engagement": {
+        "reactions": 2456,
+        "comments": 345,
+        "shares": 289
+      },
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:sample29",
+      "timestamp": "2026-02-24T16:00:00Z"
+    },
+    {
+      "id": 30,
+      "author": {
+        "name": "Samantha Liu",
+        "title": "Startup Founder & CTO at InnovateLab",
+        "profile_url": "https://www.linkedin.com/in/sample-profile-30"
+      },
+      "content": {
+        "text": "From zero to $1M ARR in 14 months. Key lessons: 1) Talk to users constantly, 2) MVP doesn't mean ugly, it means focused, 3) Technical debt is okay early on, 4) Hire slowly, fire quickly, 5) Cash flow > vanity metrics. Happy to mentor aspiring founders!",
+        "preview": "From zero to $1M ARR in 14 months. Key lessons: 1) Talk to users constantly..."
+      },
+      "engagement": {
+        "reactions": 6789,
+        "comments": 1234,
+        "shares": 892
+      },
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:sample30",
+      "timestamp": "2026-02-24T14:00:00Z"
+    }
+  ]
+}
