@@ -5,7 +5,9 @@
       "Bash(git -C /Users/paddington/Project/practice/01_AI_Native_Camp status)",
       "Bash(chmod:*)",
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nDay 4 실습 및 프로젝트 문서화\n\n- README.md 생성 및 확장 \\(프로젝트 소개, 주요 기능, 학습 진도\\)\n- CLAUDE.md 생성 \\(프로젝트 컨텍스트, 스킬 설명, MCP 설정\\)\n- .gitignore 생성 \\(민감 정보 보호\\)\n- create-daily-readme.sh 스크립트 추가 \\(Day X 실습 README 자동 생성\\)\n- Git 저장소 초기화\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit:*)"
     ]
   },
   "enableAllProjectMcpServers": true,
